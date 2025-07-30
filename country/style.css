@@ -11,6 +11,7 @@ body{
     --text-color:black;
     --element-color:white;
     font-family: nunito; 
+    width: 100%;
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -40,12 +41,16 @@ body.dark{
     justify-content: space-between;  
     margin-inline: auto;
     padding-inline: 25px;
-    height: 170px;
+    height: 65px;
 }
 .header-content h2{
-     font-size: 70px;
+    
+     font-size: 30px;
 }
 
+.header-content p{
+   font-size: 30px;
+}
 a{
     text-decoration-line: none;
     color: black;
@@ -56,24 +61,21 @@ main{
     overflow-x: hidden;
 }
 
-
-
 .search-filter-container{
-    /* margin-top: 120px;
-    margin-bottom: 120px;
-    margin-left: 120px; */
-    margin: 120px;
+    margin: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
     
 }
 
 .search-container{
 
      box-shadow: 0 4px 8px 4px rgba(0,0,0,0.5);
-     max-width: 1000px;
+     
+     max-width: 400px;
+     height: 50px;
      border-radius: 8px;
      display: flex;
      align-items: center;
@@ -84,17 +86,18 @@ main{
 .search-container input{
     outline: none;
     border: none;
-    padding: 40px 10px;
-    font-size: 50px;
-    margin: 30px;
-    height: 50px;
+    padding: 20px 10px;
+    font-size: 20px;
+    margin: 10px;
+    height:20px ;
       background-color: var(--element-color);
     color: var(--text-color);
     
 }
 .search-container i{
-    padding: 20px;
-    font-size: 50px;
+
+    padding: 8px;
+    font-size:20px ;
     justify-content: center;
     align-items: center;
     margin: 12px  ;
@@ -103,26 +106,24 @@ main{
 
 
 .filter-by-region{
-    width: 550px;
-    font-size: 50px;
-    padding: 40px;
+    width: 300px;
+    font-size: 22px;
+    padding: 12px;
      box-shadow: 0 4px 8px 4px rgba(0,0,0,0.5);
      border: none;
      outline: none;
      border-radius: 8px;
-     margin-right: 150px;
+     margin-right: 60px;
        background-color: var(--element-color);
     color: var(--text-color);
     
 }
  
 .countries-container{
-    /* max-width:1300px ;  */
-    /* margin-inline: auto; */
     width: 100%;
     margin-top: 25px;
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: space-evenly;
     flex-wrap: wrap;
     
@@ -130,10 +131,10 @@ main{
 }
 .country-card{
     display: inline-block;
-    width: 800px;
+    width: 300px;
+    height: 450px; 
     border-radius: 5px;
     overflow: hidden;
-      padding-bottom: 24px;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
        transition: all 0.2s ease-in-out;
        background-color: var(--element-color);
@@ -144,24 +145,34 @@ main{
     transform: scale(1.03);
      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 }
-.country-card img{
+/* .country-card img{
     width: 100%;
     border: px solid #ddd;
+} */
+
+img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    overflow: none;
+    border: px solid #ddd;
 }
+
 .card-text{
     padding-inline: 27px;
     padding: 30px;
-      background-color: var(--element-color);
+    height: 50%;
+    background-color: var(--element-color);
     color: var(--text-color);
        
 }
 .card-text p{
-    font-size: 60px;
+    font-size: 20px;
     margin-top: 20px;
     
 }
 .card-text h2{
-    font-size: 90px;
+    font-size: 30px;
 }
 
 @media( max-width:872px ){
