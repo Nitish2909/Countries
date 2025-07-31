@@ -226,6 +226,7 @@ body{
     padding: 10px 10px;
     font-size: 20px;
     margin: 0px;
+    margin-right: 13px;
 }
 
 .search-container i{
@@ -245,7 +246,7 @@ body{
      justify-content: center; 
 }
 .filter-by-region{
-    width: 324px;
+    width: 310px;
     font-size: 24px;
     padding: 15px;
      box-shadow: 0 4px 8px 4px rgba(0,0,0,0.5);
